@@ -1,0 +1,1 @@
+inspiration: https://dribbble.com/shots/15893427-Calculator-app

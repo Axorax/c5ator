@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "default";
+    src: url("./montserrat.ttf");
+}
+
+:root {
+    --screen: #272b31;
+    --under: #222831;
+    --text: #fff;
+}
+
+*, *::before, *::after {
+    font-family: "default", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    user-select: none;
+}
+
+.screen {
+    background: var(--screen);
+    height: 40dvh !important;
+    width: 100%;
+    color: #fff;
+}
+
+.numpad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--under);
+    height: 60dvh;
+    user-select: none;
+
+    & > div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        width: 100%;
+        height: 100%;
+
+        & > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+          }
+    } 
+}
